@@ -5,9 +5,9 @@ Circuito analógico que monitora a tensão de saída de um aerogerador e sinaliz
 - **Parte 1.** Monitor de tensão com um LED verde para tensão normal e um LED vermelho para falha, isolamento galvânico por optoacopladores e alimentação pela rede com bateria de reserva.
 - **Parte 2.** Os LEDs viraram lâmpadas feitas com fita de LED, e entraram um teste automático das lâmpadas ao ligar e um sinal de diagnóstico de LEDs queimados. Nesta parte a regra era usar só **transistores**, sem amplificador operacional nem outro circuito integrado.
 
-O arquivo de simulação deste repositório é do **circuito final**, que reúne as duas partes. O README também mostra o esquemático da Parte 1, para comparar.
+O repositório traz os arquivos de simulação da Parte 1 e do **circuito final**, que reúne as duas partes.
 
-> **English:** analog wind-turbine voltage monitor built in two stages by a three-person team (Analog Electronics I course, UTFPR, 2019). Stage 1: optocoupler-isolated voltage sensing with Zener thresholds, green and red indicator LEDs, and a mains supply with 12 V battery backup. Stage 2, using discrete transistors only: lamps made from LED strips, a 3-second lamp self-test at power-up and a DC output that indicates failed LED segments. This repository holds the final circuit, with both stages.
+> **English:** analog wind-turbine voltage monitor built in two stages by a three-person team (Analog Electronics I course, UTFPR, 2019). Stage 1: optocoupler-isolated voltage sensing with Zener thresholds, green and red indicator LEDs, and a mains supply with 12 V battery backup. Stage 2, using discrete transistors only: lamps made from LED strips, a 3-second lamp self-test at power-up and a DC output that indicates failed LED segments. This repository holds the simulation files for stage 1 and for the final circuit.
 
 ![Teste no laboratório](docs/demonstracao.gif)
 
@@ -66,7 +66,8 @@ O arquivo de simulação deste repositório é do **circuito final**, que reúne
 
 | Caminho | Conteúdo |
 |---|---|
-| `simulacao/doglight.ms14` | Circuito final completo para simulação no NI Multisim 14 |
+| `simulacao/doglight-parte1.ms14` | Circuito da Parte 1 para simulação no NI Multisim 14 |
+| `simulacao/doglight.ms14` | Circuito final, com as duas partes, para simulação no NI Multisim 14 |
 | `docs/` | Esquemáticos das duas partes e GIF do teste |
 
 ## O que eu faria diferente hoje
